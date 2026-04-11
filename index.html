@@ -1,8 +1,11 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Battle Max Ultra</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9168097504026386"
+     crossorigin="anonymous"></script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;scroll-behavior:smooth}
     body{background:linear-gradient(135deg,#020617,#0f172a,#111827);color:#fff;overflow-x:hidden}
@@ -37,37 +40,44 @@
       <a href="#stats">Stats</a>
       <a href="#download">Download</a>
     </nav>
-  </header>  <section class="hero" id="home">
+  </header>
+  <section class="hero" id="home">
     <img src="ffmax.png" alt="Free Fire Max Banner" style="width:320px;max-width:90%;border-radius:20px;box-shadow:0 0 25px rgba(245,158,11,.35);margin-bottom:25px;">
     <h1>ULTRA BATTLE EXPERIENCE</h1>
     <p>Premium Free-Fire-inspired battle royale showcase website with advanced UI, smooth effects, stats, countdown, and interactive sections.</p>
     <button class="btn" onclick="window.open('https://www.challengermode.com/freefire/tournaments?lang=en','_blank')">PLAY NOW</button>
     <button class="btn" onclick="window.location.href='https://www.youtube.com/@silentkiller656f'">YOUTUBE CHANNEL</button>
     <div class="countdown" id="countdown">Current Time: Loading...</div>
-  </section>  <h2 class="section-title" id="modes">Game Modes</h2>
+  </section>
+  <h2 class="section-title" id="modes">Game Modes</h2>
   <section class="grid">
     <div class="card"><h3>Classic BR</h3><p>50 player survival battle.</p></div>
     <div class="card"><h3>Ranked</h3><p>Push rank and earn rewards.</p></div>
     <div class="card"><h3>Clash Squad</h3><p>Fast 4v4 tactical matches.</p></div>
     <div class="card"><h3>Training</h3><p>Practice aim and movement.</p></div>
-  </section>  <h2 class="section-title" id="weapons">Weapon Stats</h2>
+  </section>
+  <h2 class="section-title" id="weapons">Weapon Stats</h2>
   <section class="grid">
     <div class="card"><h3>AK47</h3><p>Damage</p><div class="progress"><div class="bar" style="width:88%"></div></div></div>
     <div class="card"><h3>MP40</h3><p>Fire Rate</p><div class="progress"><div class="bar" style="width:95%"></div></div></div>
     <div class="card"><h3>AWM</h3><p>Range</p><div class="progress"><div class="bar" style="width:98%"></div></div></div>
     <div class="card"><h3>M1887</h3><p>Close Damage</p><div class="progress"><div class="bar" style="width:92%"></div></div></div>
-  </section>  <h2 class="section-title" id="stats">Live Stats</h2>
+  </section>
+  <h2 class="section-title" id="stats">Live Stats</h2>
   <section class="stats">
     <div class="stat"><h3 id="players">0</h3><p>Players Online</p></div>
     <div class="stat"><h3 id="matches">0</h3><p>Matches Today</p></div>
     <div class="stat"><h3 id="kills">0</h3><p>Total Kills</p></div>
-  </section>  <section class="hero" id="download">
+  </section>
+  <section class="hero" id="download">
     <h1>DOWNLOAD NOW</h1>
     <p>Join the battle and dominate the arena.</p>
     <button class="btn" onclick="startDownload()">DOWNLOAD GAME</button>
-  </section>  <footer>
+  </section>
+  <footer>
     © 2026 Battle Max Ultra | Fan Made Demo Website
-  </footer>  <script>
+  </footer>
+  <script>
     function animateValue(id,start,end,duration){
       let range=end-start,current=start,increment=end>start?1:-1,stepTime=Math.abs(Math.floor(duration/range));
       const obj=document.getElementById(id);
@@ -86,10 +96,10 @@
     }
 
     setInterval(()=>{
-  const now=new Date();
-  const timeString=now.toLocaleTimeString();
-  document.getElementById('countdown').textContent=`Current Time: ${timeString}`;
-},1000);
+      const now=new Date();
+      const timeString=now.toLocaleTimeString();
+      document.getElementById('countdown').textContent=`Current Time: ${timeString}`;
+    },1000);
   
     function startDownload(){
       const link=document.createElement('a');
@@ -99,5 +109,6 @@
       link.click();
       document.body.removeChild(link);
     }
-  </script></body>
+  </script>
+</body>
 </html>
