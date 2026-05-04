@@ -1,21 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Free Rewards</title>
+<title>Free Fire Rewards</title>
 
+<!-- 🔴 Adsterra Code -->
 <script type='text/javascript' src='YOUR_ADSTERRA_CODE'></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    background:#0b0f2a;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+.card {
+    background:#1a1f4a;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+}
+.btn {
+    background:orange;
+    padding:12px 20px;
+    border-radius:8px;
+    color:black;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:10px;
+}
+</style>
 
 </head>
 
-<body style="background:black;color:white;text-align:center;">
+<body>
 
-<h1>💎 Free Diamonds Trick</h1>
-<p>Complete steps to unlock rewards</p>
+<h1>💎 Free Fire Rewards Center</h1>
 
-<button onclick="alert('Complete tasks to unlock rewards!')" 
-style="padding:15px;background:orange;">
-Claim Now
-</button>
+<div class="card">
+<h2>🎁 Daily Rewards</h2>
+<p>Login daily and complete missions to unlock rewards.</p>
+<button class="btn" onclick="showStep()">Claim Now</button>
+</div>
+
+<div class="card">
+<h2>🎟️ Redeem Codes</h2>
+<p>Use official redeem codes (limited time).</p>
+<p><b>FF123ABC456</b></p>
+<p><b>FFREWARD2026</b></p>
+<button class="btn" onclick="alert('Codes copied!')">Copy Code</button>
+</div>
+
+<div class="card">
+<h2>💰 Earn Diamonds (Safe Ways)</h2>
+<p>✔ Google Opinion Rewards</p>
+<p>✔ Special Events</p>
+<p>✔ Tournaments</p>
+</div>
+
+<div class="card" id="steps" style="display:none;">
+<h2>🔓 Unlock Rewards</h2>
+<p>Step 1: Click claim button</p>
+<p>Step 2: Wait 5 seconds</p>
+<p>Step 3: Rewards unlocked</p>
+</div>
+
+<p style="color:orange;">⚠️ Avoid fake hacks. Use only official methods.</p>
+
+<script>
+function showStep(){
+    document.getElementById("steps").style.display = "block";
+}
+</script>
 
 </body>
-</html>
+  </html>
