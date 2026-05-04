@@ -1,121 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Battle Max Ultra</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9168097504026386"
-     crossorigin="anonymous"></script>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;scroll-behavior:smooth}
-    body{background:linear-gradient(135deg,#020617,#0f172a,#111827);color:#fff;overflow-x:hidden}
-    header{position:sticky;top:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:18px 30px;background:rgba(0,0,0,.45);backdrop-filter:blur(10px)}
-    .logo{font-size:28px;font-weight:bold;color:#f59e0b;text-shadow:0 0 15px #f59e0b}
-    nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:bold}
-    nav a:hover{color:#f59e0b}
-    .hero{padding:90px 20px;text-align:center}
-    .hero h1{font-size:52px;color:#f59e0b;text-shadow:0 0 25px rgba(245,158,11,.6)}
-    .hero p{max-width:750px;margin:18px auto;color:#d1d5db;font-size:18px}
-    .btn{padding:14px 28px;margin:10px;border:none;border-radius:12px;background:#f59e0b;color:#000;font-weight:bold;cursor:pointer;transition:.3s}
-    .btn:hover{transform:scale(1.08);box-shadow:0 0 20px rgba(245,158,11,.5)}
-    .section-title{text-align:center;font-size:34px;color:#f59e0b;margin:40px 0 20px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:25px}
-    .card{background:rgba(255,255,255,.06);padding:22px;border-radius:18px;backdrop-filter:blur(10px);transition:.3s}
-    .card:hover{transform:translateY(-8px);box-shadow:0 0 18px rgba(245,158,11,.25)}
-    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;padding:25px}
-    .stat{background:#1e293b;padding:20px;border-radius:16px;text-align:center}
-    .progress{height:10px;background:#334155;border-radius:20px;overflow:hidden;margin-top:10px}
-    .bar{height:100%;background:#f59e0b}
-    footer{text-align:center;padding:25px;color:#94a3b8}
-    .countdown{font-size:28px;font-weight:bold;color:#22c55e;margin-top:15px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Fire Max Hub</title>
+
+<!-- Adsterra Social Bar (BEST EARNING) -->
+<script type='text/javascript' src='YOUR_ADSTERRA_CODE'></script>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0b0f2a;
+    color: white;
+    text-align: center;
+}
+header {
+    padding: 20px;
+    font-size: 24px;
+    background: #111;
+}
+.btn {
+    background: orange;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+}
+.card {
+    background: #1a1f4a;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+</style>
+
 </head>
 <body>
-  <header>
-    <div class="logo">BATTLE MAX</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#modes">Modes</a>
-      <a href="#weapons">Weapons</a>
-      <a href="#stats">Stats</a>
-      <a href="#download">Download</a>
-    </nav>
-  </header>
-  <section class="hero" id="home">
-    <img src="ffmax.png" alt="Free Fire Max Banner" style="width:320px;max-width:90%;border-radius:20px;box-shadow:0 0 25px rgba(245,158,11,.35);margin-bottom:25px;">
-    <h1>ULTRA BATTLE EXPERIENCE</h1>
-    <p>Premium Free-Fire-inspired battle royale showcase website with advanced UI, smooth effects, stats, countdown, and interactive sections.</p>
-    <button class="btn" onclick="window.open('https://www.challengermode.com/freefire/tournaments?lang=en','_blank')">PLAY NOW</button>
-    <button class="btn" onclick="window.location.href='https://www.youtube.com/@silentkiller656f'">YOUTUBE CHANNEL</button>
-    <div class="countdown" id="countdown">Current Time: Loading...</div>
-  </section>
-  <h2 class="section-title" id="modes">Game Modes</h2>
-  <section class="grid">
-    <div class="card"><h3>Classic BR</h3><p>50 player survival battle.</p></div>
-    <div class="card"><h3>Ranked</h3><p>Push rank and earn rewards.</p></div>
-    <div class="card"><h3>Clash Squad</h3><p>Fast 4v4 tactical matches.</p></div>
-    <div class="card"><h3>Training</h3><p>Practice aim and movement.</p></div>
-  </section>
-  <h2 class="section-title" id="weapons">Weapon Stats</h2>
-  <section class="grid">
-    <div class="card"><h3>AK47</h3><p>Damage</p><div class="progress"><div class="bar" style="width:88%"></div></div></div>
-    <div class="card"><h3>MP40</h3><p>Fire Rate</p><div class="progress"><div class="bar" style="width:95%"></div></div></div>
-    <div class="card"><h3>AWM</h3><p>Range</p><div class="progress"><div class="bar" style="width:98%"></div></div></div>
-    <div class="card"><h3>M1887</h3><p>Close Damage</p><div class="progress"><div class="bar" style="width:92%"></div></div></div>
-  </section>
-  <h2 class="section-title" id="stats">Live Stats</h2>
-  <section class="stats">
-    <div class="stat"><h3 id="players">0</h3><p>Players Online</p></div>
-    <div class="stat"><h3 id="matches">0</h3><p>Matches Today</p></div>
-    <div class="stat"><h3 id="kills">0</h3><p>Total Kills</p></div>
-  </section>
-  <section class="hero" id="download">
-    <h1>DOWNLOAD NOW</h1>
-    <p>Join the battle and dominate the arena.</p>
-    <button class="btn" onclick="startDownload()">DOWNLOAD GAME</button>
-  </section>
-  <footer>
-    © 2026 Battle Max Ultra | Fan Made Demo Website
-  </footer>
-  <script>
-    function animateValue(id,start,end,duration){
-      let range=end-start,current=start,increment=end>start?1:-1,stepTime=Math.abs(Math.floor(duration/range));
-      const obj=document.getElementById(id);
-      const timer=setInterval(()=>{
-        current+=increment;
-        obj.textContent=current.toLocaleString();
-        if(current==end) clearInterval(timer);
-      },stepTime);
-    }
-    animateValue('players',0,12894,2000);
-    animateValue('matches',0,4821,2000);
-    animateValue('kills',0,95821,2000);
 
-    function toggleTheme(){
-      document.body.style.filter=document.body.style.filter==='invert(1) hue-rotate(180deg)'?'none':'invert(1) hue-rotate(180deg)';
-    }
+<header>🔥 Free Fire Max Hub</header>
 
-    setInterval(()=>{
-      const now=new Date();
-      const timeString=now.toLocaleTimeString();
-      document.getElementById('countdown').textContent=`Current Time: ${timeString}`;
-    },1000);
-  
-    function startDownload(){
-      const link=document.createElement('a');
-      link.href='https://ff.garena.com/en';
-      link.download='BattleMaxGame.zip';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-  </script>
+<h1>Ultra Battle Experience</h1>
+<p>Get Free Fire Tips, Rewards & Updates</p>
 
-  <!-- Adsterra Popunder - ID: 29225096 -->
-  <script src="https://pl29325596.profitablecpmratenetwork.com/37/39/a3/3739a3fe8455da42c60507cf364e4135.js"></script>
-  
-  <!-- Adsterra Social Bar - ID: 29225097 -->
-  <script src="https://pl29325595.profitablecpmratenetwork.com/91/38/f3/9138f31df12fd07845045a51ed63c8f8.js"></script>
+<a href="#" class="btn">🎮 Play Now</a>
+
+<div class="card">
+<h2>💎 Free Rewards Trick</h2>
+<p>Learn how to get free diamonds easily</p>
+<a href="#" class="btn">Open Trick</a>
+</div>
+
+<div class="card">
+<h2>⚡ Pro Tips</h2>
+<p>Improve your gameplay with these tricks</p>
+<a href="#" class="btn">View Tips</a>
+</div>
+
+<div class="card">
+<h2>🔥 Latest Updates</h2>
+<p>Check new events and skins</p>
+<a href="#" class="btn">Check Now</a>
+</div>
 
 </body>
 </html>
